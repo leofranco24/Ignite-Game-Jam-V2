@@ -201,7 +201,7 @@ Transform:
   m_GameObject: {fileID: 145023223}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0066429507, y: -0, z: -0, w: 0.999978}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -299,6 +299,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &876084239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876084241}
+  - component: {fileID: 876084240}
+  m_Layer: 0
+  m_Name: ItemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &876084240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876084239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233884754f2c4c409e17cb09f7af191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Object: {fileID: 4005503431572365506, guid: 082d953852e424c7e87c6a28bd1ee2e4, type: 3}
+  spawnRate: 2
+--- !u!4 &876084241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876084239}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.3, y: -3.98, z: -0.104473196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224491989
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +359,7 @@ GameObject:
   - component: {fileID: 1224491993}
   - component: {fileID: 1224491992}
   m_Layer: 0
-  m_Name: Adrogynous_Child
+  m_Name: Adrogynous_Child_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b834f1fbd5fb47589be2fb082cf7290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myRigidbody: {fileID: 1224491994}
+  UpDownMoveSpeed: 10
+  LeftRigthMoveSpeed: 5
 --- !u!61 &1224491993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -477,3 +526,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 145023225}
   - {fileID: 1224491991}
+  - {fileID: 876084241}
