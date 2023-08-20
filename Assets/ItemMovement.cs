@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemMovement : MonoBehaviour
 {
     public float MoveSpeed = 5;
-    public float deadZone = -45;
+    public float deadZone = -10;
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class ItemMovement : MonoBehaviour
         transform.position = transform.position + (Vector3.left * MoveSpeed) * Time.deltaTime;
         if (transform.position.x < deadZone)
         {
-            Debug.Log(object);
+            Debug.Log("Object Deleted");
             Destroy(gameObject);
         }
     }
