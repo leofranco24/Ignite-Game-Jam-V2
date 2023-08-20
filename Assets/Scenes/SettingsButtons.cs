@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class intro : MonoBehaviour
+public class SettingsButtons : MonoBehaviour
 {
     public GameObject settingsMenu; 
         
@@ -29,5 +29,4 @@ public class intro : MonoBehaviour
     {
         
     }
-
 }

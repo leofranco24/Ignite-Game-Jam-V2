@@ -19,7 +19,7 @@ public class ItemMovement : MonoBehaviour
         transform.position = transform.position + (Vector3.left * MoveSpeed) * Time.deltaTime;
         if (transform.position.x < deadZone)
         {
-            Debug.Log(object);
+            //Debug.Log(object);
             Destroy(gameObject);
         }
     }
