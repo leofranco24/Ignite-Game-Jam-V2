@@ -7,7 +7,6 @@ public class Shipscrit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        t
         //gameObject.name;
     }
 
