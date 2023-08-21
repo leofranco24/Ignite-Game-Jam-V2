@@ -10,8 +10,11 @@ public class SettingsButtons : MonoBehaviour
 {
     public GameObject settingsMenu;
     public Image creditScenes;
+    public Image instructionScene;
     public Sprite[] creditImages;
+    public Sprite[] instructionImages;
     public int index = 0;
+    public int instructionIDX = 0;
 
     public void EnableSettings()
     {
@@ -20,9 +23,18 @@ public class SettingsButtons : MonoBehaviour
     
     public void Play()
     {
-        SceneManager.LoadScene("Game/First Scene");
+        instructionIDX++;
+        if (instructionIDX > 3)
+        {
+            SceneManager.LoadScene("Game/First Scene");
+        }
+        else
+        {
+            instructionScene.sprite = instructionImages[instructionIDX];
+        }
+        
     }
-
+    
     public void Back()
     {
         settingsMenu.SetActive(false);  
@@ -48,18 +60,4 @@ public class SettingsButtons : MonoBehaviour
         Application.Quit();
     }
     
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        //gameObject.name;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
