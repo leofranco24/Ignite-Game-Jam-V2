@@ -35,6 +35,6 @@ public class SpawnerScript : MonoBehaviour
         float lowestPoint = transform.position.y;
         float highestPoint = transform.position.y + heightOffset;
             
-        Instantiate(Object, new Vector3(transform.position.x,Random.Range(lowestPoint,highestPoint),0),   transform.rotation);
+        Instantiate(Object, new Vector3(transform.position.x,Random.Range(lowestPoint,highestPoint),0), transform.rotation);
     }
 }
